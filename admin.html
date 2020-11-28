@@ -24,10 +24,25 @@
                 <div class="main-menu">
                     <ul class="menu">
                         <li class="menu__item">
-                            <a href=#>Отчет №1</a>
+                            <a href=#> Заказы</a>
                         </li>
                         <li class="menu__item">
-                            <a href=#>Отчет №2</a>
+                            <a href=#> Отчет по клиентам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по заказам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по артикулам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по корзинам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по запросам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Загрузка прайсов</a>
                         </li>
                     </ul>
                 </div>
@@ -35,15 +50,18 @@
             <div class="admin-dashboard">
                 <div class="dash__header">
                     <h4 class="headerM">Information</h4>
-                    <form action="" method="get">
+                    <form action="" method="get" class="input_loginfield">
                         <input name="search" placeholder="Введите логин клиента..." type="search">
-                        <button type="submit">Поиск</button>
+                        <button class="btn" type="submit">Поиск</button>
                     </form>
-                    <form action="" method="get">
-                        <input name="DateFrom" placeholder="" type="search">
-                        <input name="DateTo" placeholder="" type="search">
-                        <button type="submit">Поиск</button>
+
+                    <form action="" method="get" class="input_datefield">
+                        <label for="dateInput" style="font-size: 14px;">Дата регистрации:</label>
+                        <input name="DateFrom" placeholder="" id="dateInput" type="date">
+                        <input name="DateTo" placeholder="" type="date">
+                        <button class="btn" type="submit">Поиск</button>
                     </form>
+                    <button class="btn" type="submit">Выгрузка</button>
                 </div>
 
                 <div class="mainblock">
