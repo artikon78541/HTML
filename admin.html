@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPanel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cssAdmin.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="admin-container">
+            <div class="admin-menu">
+                <div class="user-frame">
+                    <span class="user-info">
+                        <span class="login">login@mail.ru</span>
+                        <span class="role">Administrator</span>
+                    </span>
+
+                </div>
+                <div class="main-menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href=#>Отчет №1</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#>Отчет №2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-dashboard">
+                <div class="dash__header">
+                    <h4 class="headerM">Information</h4>
+                    <form action="" method="get">
+                        <input name="search" placeholder="Введите логин клиента..." type="search">
+                        <button type="submit">Поиск</button>
+                    </form>
+                    <form action="" method="get">
+                        <input name="DateFrom" placeholder="" type="search">
+                        <input name="DateTo" placeholder="" type="search">
+                        <button type="submit">Поиск</button>
+                    </form>
+                </div>
+
+                <div class="mainblock">
+                    <div class="user-list">
+                        <table class="user-table">
+                            <thead>
+                                <tr>
+                                    <th>N</th>
+                                    <th>Код</th>
+                                    <th>Номер</th>
+                                    <th>Логин</th>
+                                    <th>Имя</th>
+                                    <th>Телефон</th>
+                                    <th>Дата регистрации</th>
+                                    <th>Роль</th>
+                                    <th align="center">Изменить</th>
+                                    <!-- <th>Купить</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>sdfkndnkjdfkjnj</td>
+                                    <td>10</td>
+                                    <td>gvkbm@ghvj.sdf</td>
+                                    <td>Иванов Иван Иванович</td>
+                                    <td>87665678696</td>
+                                    <th>13.06.2021</th>
+                                    <td>User</td>
+
+                                    <td align="center">
+                                        <div class="user_update">
+                                            <a class="user_upd_btn" type="submit" asp-controller="#" asp-action="#"
+                                                asp-route-partId="@p.PartId">Изменить</a>
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>sdfkndnkjdfkjnj</td>
+                                    <td>10</td>
+                                    <td>gvkbm@ghvj.sdf</td>
+                                    <td>Иванов Иван Иванович</td>
+                                    <td>87665678696</td>
+                                    <th>13.06.2021</th>
+                                    <td>User</td>
+
+                                    <td align="center">
+                                        <div class="user_update">
+                                            <a class="user_upd_btn" type="submit" asp-controller="#" asp-action="#"
+                                                asp-route-partId="@p.PartId">Изменить</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
