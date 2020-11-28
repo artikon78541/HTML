@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автозапчасти</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0fb52fd33c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <header class="menu-bar">
+        <div class="container">
+            <div class="upper-menu">
+                <div class="main-container">
+                    <div class="phone">
+                        +7(921)100-00-00
+                    </div>
+                </div>
+            </div>
+
+            <div class="mid-menu">
+                <div class="main-container">
+                    <div class="mid-inner-menu">
+                        <div class="logo">
+                            <!-- LOGO -->
+                        </div>
+                        <div class="searchline">
+                            <form action="" method="get">
+                                <input name="search" placeholder="Введите номер запчасти..." type="search">
+                                <button type="submit">Поиск</button>
+                            </form>
+
+                        </div>
+                        <div class="iconUser">
+                            <!-- <i class="fas fa-user"></i> -->
+                            <a asp-area="Identity" asp-page="/Account/Manage/Index"
+                                title="Manage">@User.Identity.Name</a>
+                        </div>
+                        <div class="logout">
+                            <form class="form__icon" asp-controller="Account" asp-action="Logout">
+                                <button type="submit"><i class="fa fa-sign-out"></i></button>
+                            </form>
+                        </div>
+                        <div class="iconCart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-total">(1)</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-menu">
+                <div class="main-container">
+                    <div class="bottom-inner-menu">
+                        <ul class="main-menu">
+                            <li><a href="">Поиск</a></li>
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Доставка</a></li>
+                            <li><a href="">Оплата</a></li>
+                            <li><a href="">Возврат</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main-container">
+            <div class="form-registration">
+                <div class="reg-header">
+                    <h4>Авторизация</h4>
+                </div>
+                <div asp-validation-summary=" All" class="text-danger"></div>
+                <form method="post">
+                    <div class="form-group">
+                        <div>Email</div>
+                        <input asp-for="Email" class="form-control" placeholder="Введите Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <div>Пароль</div>
+                        <input asp-for="Password" class="form-control" placeholder="Введите пароль" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <button type="submit"> Войти </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-menu">
+                <div class="main-container">
+                    <div class="footer-menu-col">
+                        <div class="rowFooter1">
+                            <div class="logo-footer">
+                                LOGO
+                            </div>
+                            <div class="footer-City">Санкт-Петербург</div>
+                            <div class="footer-phone">+7(921)100-00-00</div>
+
+                        </div>
+                        <div class="rowFooter2">
+                            <div>
+                                <h4>КАТАЛОГИ ТОВАРОВ</h4>
+                            </div>
+
+                            <ul class="footer-menu1">
+                                <li><a href="">Масла</a></li>
+                                <li><a href="">Аккумуляторы</a></li>
+                                <li><a href="">Лампы</a></li>
+                            </ul>
+                        </div>
+                        <div class="rowFooter3">
+                            <div>
+                                <h4>ИНФОРМАЦИЯ</h4>
+                            </div>
+                            <ul class="footer-menu1">
+                                <li><a href="">Доставка</a></li>
+                                <li><a href="">Оплата</a></li>
+                                <li><a href="">Возврат товара</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="main-container">
+                    2020 &copy; Автозапчасти
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  }
+  .wrapper{
+    width: 100vw;
+    height: 100vh;
+  }
+  .admin-container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+      
+  }
+
+  .admin-menu{
+    float: left;
+    width: 15%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  .admin-dashboard{
+      float: right;
+      height: 100%;
+      width: 85%;
+      background-color:#fafbfd;
+  }
+  .mainblock{
+      height: 90%;
+      margin: 0% 2% 5% 2%;
+      background-color: #ffffff;
+
+  }
+  .user-frame{
+    width: 90%;
+    height: 10%;
+    display: block;
+    margin: 0 auto;
+    border-bottom-color: rgb(245, 245, 245);
+    border-width: 0.5px;
+    border-bottom-style: inset;
+    margin-bottom: 10%;
+    
+
+  }
+  .user-info{
+    padding-top: 10%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .login{
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+  }
+  .role{
+    font-size:12px;
+    font-weight: bolder;
+    display: block;
+  }
+  .main-menu{
+    margin-top:5%;
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+
+  }
+  .menu{
+    height: 90%;
+    margin-top: 5%;
+    margin: 0 auto;
+  }
+  .menu__item{
+    height:8%;
+    width:inherit;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 4%;
+    text-align: left;
+    padding-left: 10%;
+
+  }
+  .menu__item a{
+    color:#8d8498;
+    font-size:14px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+
+  }
+  .menu__item a:hover{
+    color: #575962;
+    font-size:14px;
+    display: flex;
+    width: 100%;
+    background: rgba(199, 199, 199, 0.2);
+    box-sizing: border-box;
+  }
+  .dash__header{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .headerM{
+    padding-left: 5%;
+    color: #444444;
+    font-size: 23px;
+  }
+
+
+/*______________________________________*/
+
+
+.user-table {
+    border-collapse: collapse;
+    font-size: 10px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .user-table thead tr {
+    background-color: #404145;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .user-table th,
+  .user-table td,
+  .user-table a {
+    padding: 0.3% 0.5%;
+    font-size: 12px;
+  }
+  
+  .user-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .user-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .user-table tbody tr:last-of-type {
+    border-bottom: 2px solid #404145;
+  }
+  
+  .user-table tbody tr.active-row {
+    font-weight: bold;
+    color: #404145;
+  }

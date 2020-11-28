@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0fb52fd33c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootmain.css" type="text/css">
+</head>
+
+<body>
+
+    <body>
+        <header class="menu-bar">
+            <div class="container-fluid  upper-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 align-items-center">
+                            <div class="phone">+7(921)100-00-00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid mid-menu">
+                <div class="container mid-menu">
+                    <div class="row mid-inner-menu align-items-center">
+
+                        <div class="col-12 col-md-1 col-xl-2">
+                            <a href=#>
+                                <div class="image-logo">
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-7 col-xl-6 order-1 order-md-0 searchline">
+                            <form action="" method="get">
+                                <input name="search" placeholder="Введите номер запчасти..." type="search">
+                                <button type="submit">Поиск</button>
+                            </form>
+                        </div>
+
+                        <div class="col-6 col-md-2 col-xl-2 order-0 order-md-1 iconUser">
+
+                            <a asp-area="Identity" asp-page="/Account/Manage/Index"
+                                title="Manage">@User.Identity.Name</a>
+                        </div>
+                        <div class="col-3 col-md-1 col-xl-1 order-0 order-md-1 logout">
+                            <form asp-controller="Account" asp-action="Logout">
+                                <button type="submit"><i class="fa fa-sign-out"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="col-3 col-md-1 col-xl-1 order-0 order-md-1 iconCart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-total">(1)</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bottom-menu">
+                <div class="container m-menu">
+                    <ul class="main-menu">
+                        <li><a class="menulink" href="">Поиск</a></li>
+                        <li><a class="menulink" href="">О компании</a></li>
+                        <li><a class="menulink" href="">Доставка</a></li>
+                        <li><a class="menulink" href="">Оплата</a></li>
+                        <li><a class="menulink" href="">Возврат</a></li>
+                        <li><a class="menulink" href="">Контакты</a></li>
+                    </ul>
+                    <a href="#" class="" id="pull">Меню</a>
+
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container-fluid">
+                <div class="banner">
+                </div>
+            </div>
+            <div class="container categories">
+                <div class="row categories-row">
+                    <div class="special-category col-md-2">
+                        <a href="#" class="category-inner">
+
+                            <div class="category-image-wrapper">
+                                <span class="category-image-inner image-container">
+
+
+
+                                    <img src="img/oil1.jpg" class="category-image" title="Масла">
+                                </span>
+                            </div>
+
+                            <div class="category-title">
+                                Масла
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="special-category col-md-2">
+                        <a href="#" class="category-inner">
+
+                            <div class="category-image-wrapper">
+                                <span class="category-image-inner image-container">
+
+
+
+                                    <img src="img/battery.jpg" class="category-image" title="Аккумуляторы">
+                                </span>
+                            </div>
+
+                            <div class="category-title">
+                                Аккумуляторы
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="special-category col-md-2">
+                        <a href="#" class="category-inner">
+
+                            <div class="category-image-wrapper">
+                                <span class="category-image-inner image-container">
+
+
+
+                                    <img src="img/lamp.jpg" class="category-image" title="Лампы">
+                                </span>
+                            </div>
+
+                            <div class="category-title">
+                                Лампы
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="container">
+
+
+                <div class="textblock">
+                    <div class="textblock__main">
+                        <h1 style="font-size: 20px; line-height: 28px; margin:0 0 8px">Интернет-магазин автозапчастей
+                        </h1>100 000 предложений запасных частей, компонентов, агрегатов, расходных
+                        материалов, технических жидкостей и аксессуаров для большинства марок автомобилей
+                        <br><br> Добро пожаловать в наш магазин! <br><br><em>Вы заботитесь о своем автомобиле и
+                            разбираетесь
+                            во всех тонкостях его устройства?</em> <br><em>Вы начинающий автолюбитель, но хотите
+                            самостоятельно обслуживать свой автомобиль?</em> <br> <em>Не обслуживаете автомобиль сами,
+                            но хотите контролировать свои траты на запчасти и расходные материалы?</em> <br><br> Наш
+                        магазин
+                        будет полезен в любом случае!
+                        <div style="margin: 16px 0;">
+                            <div class="textblock__firstblock">
+                                <strong>У нас есть:</strong>
+                                <ul class="blue-point">
+                                    <li>поиск по наименованию – у нас Вы найдете и «дворники» и «щётки
+                                        стеклоочистителя»;
+                                    </li>
+                                    <li>поиск по артикулу – если Вы знаете точный артикул, то сможете безошибочно найти
+                                        нужную
+                                        деталь;</li>
+                                    <li>подбор по VIN – введите VIN Вашего автомобиля, и Вы сможете найти необходимые
+                                        запасные части, подходящие именно для него;</li>
+                                    <li>база автозапчастей для иномарок, в которой есть все
+                                        каталоги оригинальных запчастей и каталоги аналогов;</li>
+                                    <li>бесплатная доставка запчастей на дом;</li>
+                                    <li>история Ваших заказов;</li>
+                                </ul>
+                            </div>
+                            <div class="textblock__secondblock">
+                                <strong>У нас вы можете:</strong>
+                                <ul class="blue-point">
+                                    <li>купить автозапчасти онлайн и быть уверенными в их качестве и сроках доставки;
+                                    </li>
+                                    <li>оплатить заказ курьеру при получении;</li>
+                                    <li><a href="#" title="Оплата">оплатить</a> заказ любым удобным Вам способом;</li>
+                                    <li><a href="#" title="Возврат товаров">вернуть товар</a> в любом случае в течение
+                                        14 дней;</li>
+                                    <li>заказать доставку в пункт выдачи курьерской службы рядом с Вашим домом;</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>
+                        </div>
+
+                        <div style="clear: both; width: 100%;">У нас заказывать автозапчасти для иномарок
+                            легко.<br> <br> Мы всегда рады общению и готовы контактировать с Вами в любом удобном для
+                            Вас формате: по телефону, мессенджеру или по
+                            е-mail. <br><br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </section>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-menu">
+                    <div class="container">
+                        <div class="row footer-menu-col">
+                            <div class="col-md-4 rowFooter1">
+                                <div class="logo-footer">
+                                    <a href=#>
+                                        <div class="image-logo"></div>
+                                    </a>
+                                </div>
+                                <div class="footer-City">Санкт-Петербург</div>
+                                <div class="footer-phone">+7(921)100-00-00</div>
+
+                            </div>
+                            <div class="col-xs-6 col-md-4 rowFooter2">
+                                <div>
+                                    <h6 style="margin-top: 10px;">КАТАЛОГИ ТОВАРОВ</h6>
+                                </div>
+
+                                <ul class="footer-menu1">
+                                    <li><a href="">Масла</a></li>
+                                    <li><a href="">Аккумуляторы</a></li>
+                                    <li><a href="">Лампы</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-md-4 rowFooter3">
+                                <div>
+                                    <h6 style="margin-top: 10px;">ИНФОРМАЦИЯ</h6>
+                                </div>
+                                <ul class="footer-menu1">
+                                    <li><a href="">Доставка</a></li>
+                                    <li><a href="">Оплата</a></li>
+                                    <li><a href="">Возврат товара</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        2020 &copy; Автозапчасти
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script charset="utf-8" src="./js/main.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

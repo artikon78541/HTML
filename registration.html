@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0fb52fd33c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+ <div class="form-registration">   
+    <div class="reg-header">
+        <h4>Регистрация</h4>
+    </div>
+<div asp-validation-summary=" All" class="text-danger"></div>
+<form method="post">
+    <div class="form-group">
+        <div>ФИО <span style="font-size: 12px; font-weight: 400;">(введите ваши реальное ФИО, выдача товара может
+        производиться по паспортным
+        данным)</span></div>
+        <input asp-for="Name" class="form-control" placeholder="Введите ФИО"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <div>Email</div>
+        <input asp-for="Email" class="form-control" placeholder="Введите Email"/>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <div>Телефон</div>
+        <input asp-for="Phone" class="form-control" placeholder="Введите номер телефона"/>
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <div>Пароль</div>
+        <input asp-for="Password" class="form-control" placeholder="Введите пароль(мин 6 символов)" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <div>Подтверждение пароля</div>
+        <input asp-for="ConfirmPassword" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+</div>   
+</body>
+</html>

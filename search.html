@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0fb52fd33c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+
+<body>
+    <div class="search-list">
+        <table class="search-table">
+            <thead>
+                <tr>
+                    <th>Бренд</th>
+                    <th>Номер</th>
+                    <th>Наименование</th>
+                    <th>Срок поставки</th>
+                    <th>На складе</th>
+                    <th>Цена</th>
+                    <th align="center">Заказ</th>
+                    <!-- <th>Купить</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wabco</td>
+                    <td>4324102227</td>
+                    <td>Фильтр</td>
+                    <td>12.12.20</td>
+                    <td>12</td>
+                    <td>900</td>
+                    <!-- <td>
+                        <a class="btn btn-success btn-sm pull-right" style="float: right" type="submit"
+                            asp-controller="Cart" asp-action="AddToCart" asp-route-partId="@p.PartId">В корзину</a>
+                    </td> -->
+                    <td align="center">
+                        <div class="input-cart">
+                            <input type="text" class="input-field" placeholder="1" value="1">
+                            <a class="cart-button" type="submit" asp-controller="Cart" asp-action="AddToCart"
+                                asp-route-partId="@p.PartId">В корзину</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
