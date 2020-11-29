@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdminPanel</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/cssAdmin.css" type="text/css">
 </head>
 
@@ -23,6 +25,9 @@
                 </div>
                 <div class="main-menu">
                     <ul class="menu">
+                        <li class="menu__item">
+                            <a href=#> Клиенты</a>
+                        </li>
                         <li class="menu__item">
                             <a href=#> Заказы</a>
                         </li>
@@ -51,14 +56,11 @@
                 <div class="dash__header">
                     <h4 class="headerM">Information</h4>
                     <form action="" method="get" class="input_loginfield">
-                        <input name="search" placeholder="Введите логин клиента..." type="search">
-                        <button class="btn" type="submit">Поиск</button>
-                    </form>
+                        <input name="search" placeholder="Введите логин клиента..." class="loginfield" type="search">
 
-                    <form action="" method="get" class="input_datefield">
                         <label for="dateInput" style="font-size: 14px;">Дата регистрации:</label>
-                        <input name="DateFrom" placeholder="" id="dateInput" type="date">
-                        <input name="DateTo" placeholder="" type="date">
+                        <input name="DateFrom" placeholder="" class="dateInput" type="date">
+                        <input name="DateTo" placeholder="" class="dateInput" type="date">
                         <button class="btn" type="submit">Поиск</button>
                     </form>
                     <button class="btn" type="submit">Выгрузка</button>
@@ -97,7 +99,7 @@
                                             <a class="user_upd_btn" type="submit" asp-controller="#" asp-action="#"
                                                 asp-route-partId="@p.PartId">Изменить</a>
                                         </div>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
