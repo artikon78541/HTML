@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminSerchForm</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/cssAdmin.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="admin-container">
+            <div class="admin-menu">
+                <div class="user-frame">
+                    <span class="user-info">
+                        <span class="login">login@mail.ru</span>
+                        <span class="role">Administrator</span>
+                    </span>
+
+                </div>
+                <div class="main-menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href=#> Клиенты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Заказы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по клиентам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по заказам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по артикулам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по корзинам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Отчет по запросам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href=#> Загрузка прайсов</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-dashboard">
+                <div class="dash__header__search">
+                    <div class="report-name">
+                        <h4 class="headerM">Information</h4>
+                    </div>
+                    <div class=" searchPart-form">
+                        <form action="" method="get">
+                            <input name="searchPart" placeholder="Введите номер запчасти..." class="admin-search-part"
+                                type="search">
+                            <button class="btn" type="submit">Поиск</button>
+                        </form>
+                    </div>
+
+
+                </div>
+
+                <div class="mainblock">
+                    <div class="client-block">
+
+                        <div class="client-block-info">
+
+                            <h5 style="margin-bottom:2%;">Информация о клиенте</h5>
+                            <table class="client-table-info">
+                                <tr><td>Номер:</td><td class="td-client">4002344</td></tr>
+                                <tr><td>Email:</td><td class="td-client">4jdhfdjbc@sdfsdc.ru</td></tr>
+                                <tr><td>Телефон:</td><td class="td-client">+7(921)789-78-78</td></tr>
+                                <tr><td>ФИО: </td><td class="td-client">Алексеев Андрей Петрович</td></tr>
+                            </table>
+                            <!-- <span>Номер: 4002344</span>
+                            <span>Email: jdhfdjbc@sdfsdc.ru</span>
+                            <span>Телефон: +7(921)789-78-78</span>
+                            <span>ФИО: Алексеев Андрей Петрович</span> -->
+                        </div>
+                        <div class="searchLogin-form">
+                            <form action="" method="get">
+                                <label for="" style="font-size: 14px;">Выберите клиента:</label>
+                                <input name="searchClient" placeholder="Номер, имя, телефон клиента..."
+                                    class="admin-search-client" type="search">
+                                <button class="btn" type="submit">Поиск</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="search-list">
+                        <table class="search-table">
+                            <thead>
+                                <tr>
+                                    <th>Бренд</th>
+                                    <th>Номер</th>
+                                    <th>Наименование</th>
+                                    <th>Срок поставки</th>
+                                    <th>На складе</th>
+                                    <th>Цена закупки</th>
+                                    <th style="text-align: center;">Поставщик</th>
+                                    <th style="text-align: center;">Цена клиента</th>
+                                    <th style="width: 15%; text-align: center;">Заказ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Wabco</td>
+                                    <td>4324102227</td>
+                                    <td>Фильтр</td>
+                                    <td>12.12.20</td>
+                                    <td>12</td>
+                                    <td>900</td>
+                                    <th>Армтек</th>
+                                    <th class="th-price"><input type="text" class="input-field-price" placeholder="1100"
+                                            value=""></th>
+                                    <td align="center">
+                                        <div class="input-cart">
+                                            <input type="text" class="input-field" placeholder="1" value="1">
+                                            <a class="cart-button" type="submit" asp-controller="Cart"
+                                                asp-action="AddToCart" asp-route-partId="@p.PartId">В корзину</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

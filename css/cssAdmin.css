@@ -205,3 +205,136 @@ a {
   color: rgb(28, 51, 102);
   cursor: pointer;
 }
+
+
+/*____________search_____________________*/
+
+.dash__header__search {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.report-name{
+flex:2;
+}
+.searchPart-form{
+flex:10;
+width:60%;
+}
+.admin-search-part{
+  width: 52%;
+}
+
+.client-block{
+  display: flex;
+
+}
+.client-block-info{
+  flex:5;
+  padding: 2%;
+}
+.client-table-info{
+  width: 100%;
+}
+.client-table-info td{
+  font-size: 14px;
+  text-align: right;
+}
+.td-client{
+  text-align: left !important;
+  padding-left: 4%;
+  color:blue;
+  font-weight: 600;
+}
+
+.searchLogin-form{
+  flex:6;
+  align-self: center;
+}
+.searchLogin-form form{
+  align-items: center;
+
+}
+.admin-search-client{
+  width: 40%;
+}
+.client-info span{
+  font-size: 10px;
+}
+
+
+
+
+.search-list {
+
+}
+
+.search-table {
+  border-collapse: collapse;
+  font-size: 10px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.search-table thead tr {
+  background-color: #404145;
+  color: #ffffff;
+  text-align: left;
+}
+
+.search-table th,
+.search-table td,
+.search-table a {
+  padding: 0.3% 0.5%;
+  font-size: 12px;
+}
+
+.search-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.search-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.search-table tbody tr:last-of-type {
+  border-bottom: 2px solid #404145;
+}
+
+.search-table tbody tr.active-row {
+  font-weight: bold;
+  color: #404145;
+}
+.input-cart {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+.th-price input{
+  color:black;
+}
+.input-field-price{
+  width: 25%;
+  font-size: 12px;
+  text-align: center;
+
+}
+.input-field {
+  width: 14%;
+  text-align: center;
+  font-size: 12px;
+}
+.input-cart a {
+  color: red;
+}
+
+/*__________Загрузка файлов___*/
+
+
+.form-price-loading input{
+margin:1%;
+}
